@@ -46,9 +46,9 @@
       <div class="row">
         
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <form class="form-dash">
           <h1 class="page-header">Dashboard</h1>
-
-          <h2 class="sub-header">Section title</h2>
+          <h2 class="sub-header">Status</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -57,7 +57,7 @@
                     ITEM
                   </th>
                   <th>
-                    SETTINGS
+                    SETTING
                   </th>
                   
                 </tr>
@@ -68,18 +68,7 @@
                     LIGHT
                   </td>
                   <td>
-                    <form action="action_page.php">
-                      <br>
-                      <input type="radio" name="on" value="on">LET THERE BE LIGHT
-                      <br>
-                    </form>
-                  </td>
-                  <td>
-                    <form action="action_page.php">
-                      <br>
-                      <input type="radio" name="on" value="on">SLEEP TIME
-                      <br>
-                    </form>
+                    <input id='light' type="checkbox">ON/OFF
                   </td>
                 </tr>
                 <tr>
@@ -87,18 +76,7 @@
                     DOOR
                   </td>
                   <td>
-                    <form action="action_page.php">
-                      <br>
-                      <input type="radio" name="on" value="on">COME IN
-                      <br>
-                    </form>
-                  </td>
-                  <td>
-                    <form action="action_page.php">
-                      <br>
-                      <input type="radio" name="on" value="on">STAY OUT
-                      <br>
-                    </form>
+                      <input id='door' type="checkbox">LOCK/UNLOCK
                   </td>
                 </tr>
                 <tr>
@@ -106,27 +84,19 @@
                     MUSIC
                   </td>
                   <td>
-                    <form action="action_page.php">
-                      <br>
-                      <input type="radio" name="on" value="on">LET THE BEAT DROP
-                      <br>
-                    </form>
-                  </td>
-                  <td>
-                    <form action="action_page.php">
-                      <br>
-                      <input type="radio" name="on" value="on">STUDY TIME
-                      <br>
-                    </form>
+                      <input id='music' type="checkbox">PLAY/STOP
                   </td>
                 </tr>               
               </tbody>
             </table>
+            <button class="update" type="update">Update</button>
+            <form>
           </div>
         </div>
       </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
   </body>
 </html>
